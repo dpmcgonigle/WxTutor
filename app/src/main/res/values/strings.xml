@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">WxTutor</string>
+
+    <!--Launcher Strings-->
+    <string name="intro_fragment_title">Weather Tutor</string>
+    <string name="teacher">Teacher</string>
+    <string name="thunderstorm">Thunderstorm</string>
+    <string name="start">Start</string>
+
+    <string name="pageBreak">________________________________________</string>
+    <string name="forecasterToolsDescription">This page will allow you to quickly switch between different units of measure.</string>
+
+    <string-array name="forecasterToolsTempArray">
+        <item>°F</item>
+        <item>°C</item>
+        <item>°K</item>
+    </string-array>
+
+    <string-array name="forecasterToolsSpeedArray">
+        <item>MPH</item>
+        <item>KPH</item>
+        <item>Knots</item>
+        <item>MPS</item>
+        <item>FPS</item>
+    </string-array>
+
+    <string-array name="forecasterToolsPressureArray">
+        <item>mb</item>
+        <item>\"Hg</item>
+        <item>psi</item>
+    </string-array>
+
+    <string-array name="forecasterToolsLengthArray">
+        <item>m</item>
+        <item>Km</item>
+        <item>nm</item>
+        <item>Mi</item>
+        <item>Ft</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    tools:context=".LessonPagerActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lessonTitle"
+            style="@style/fragmentTitle"
+            android:text="Lesson Title"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lessonContentTitle1"
+            style="@style/lessonContentTitle"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Content Title 1"
+            app:layout_constraintBottom_toTopOf="@+id/lessonContentText1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonTitle" />
+
+        <ImageView
+            android:id="@+id/lessonImage1"
+            style="@style/lessonContentImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonTitle"
+            app:srcCompat="@drawable/lightning_bullet" />
+
+        <TextView
+            android:id="@+id/lessonContentText1"
+            style="@style/lessonContentText"
+            android:text="Content Text 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonImage1" />
+
+        <TextView
+            android:id="@+id/lessonContentTitle2"
+            style="@style/lessonContentTitle"
+            android:text="Content Title 2"
+            app:layout_constraintBottom_toTopOf="@+id/lessonContentText2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText1"
+            app:layout_constraintVertical_bias="0.504" />
+
+        <ImageView
+            android:id="@+id/lessonImage2"
+            style="@style/lessonContentImage"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText1"
+            app:srcCompat="@drawable/lightning_bullet" />
+
+        <TextView
+            android:id="@+id/lessonContentText2"
+            style="@style/lessonContentText"
+            android:text="Content Text 2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonImage2" />
+
+        <TextView
+            android:id="@+id/lessonContentTitle3"
+            style="@style/lessonContentTitle"
+            android:layout_marginBottom="8dp"
+            android:text="Content Title 3"
+            app:layout_constraintBottom_toTopOf="@+id/lessonContentText3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText2" />
+
+        <ImageView
+            android:id="@+id/lessonImage3"
+            style="@style/lessonContentImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText2"
+            app:srcCompat="@drawable/lightning_bullet" />
+
+        <TextView
+            android:id="@+id/lessonContentText3"
+            style="@style/lessonContentText"
+            android:text="Content Text 3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonImage3" />
+
+        <TextView
+            android:id="@+id/lessonContentTitle4"
+            style="@style/lessonContentTitle"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Content Title 4"
+            app:layout_constraintBottom_toTopOf="@+id/lessonContentText4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText3" />
+
+        <ImageView
+            android:id="@+id/lessonImage4"
+            style="@style/lessonContentImage"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText3"
+            app:srcCompat="@drawable/lightning_bullet" />
+
+        <TextView
+            android:id="@+id/lessonContentText4"
+            style="@style/lessonContentText"
+            android:text="Content Text 4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonImage4" />
+
+        <TextView
+            android:id="@+id/lessonContentTitle5"
+            style="@style/lessonContentTitle"
+            android:layout_marginBottom="8dp"
+            android:text="Content Title 5"
+            app:layout_constraintBottom_toTopOf="@+id/lessonContentText5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText4" />
+
+        <ImageView
+            android:id="@+id/lessonImage5"
+            style="@style/lessonContentImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText4"
+            app:srcCompat="@drawable/lightning_bullet" />
+
+        <TextView
+            android:id="@+id/lessonContentText5"
+            style="@style/lessonContentText"
+            android:text="Content Text 5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonImage5" />
+
+        <TextView
+            android:id="@+id/lessonContentTitle6"
+            style="@style/lessonContentTitle"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Content Title 6"
+            app:layout_constraintBottom_toTopOf="@+id/lessonContentText6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText5" />
+
+        <ImageView
+            android:id="@+id/lessonImage6"
+            style="@style/lessonContentImage"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText5"
+            app:srcCompat="@drawable/lightning_bullet" />
+
+        <TextView
+            android:id="@+id/lessonContentText6"
+            style="@style/lessonContentText"
+            android:text="Content Text 6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonImage6" />
+
+        <TextView
+            android:id="@+id/lessonContentTitle7"
+            style="@style/lessonContentTitle"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Content Title 7"
+            app:layout_constraintBottom_toTopOf="@+id/lessonContentText7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText6"
+            app:layout_constraintVertical_bias="0.326" />
+
+        <ImageView
+            android:id="@+id/lessonImage7"
+            style="@style/lessonContentImage"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonContentText6"
+            app:srcCompat="@drawable/lightning_bullet" />
+
+        <TextView
+            android:id="@+id/lessonContentText7"
+            style="@style/lessonContentText"
+            android:text="Content Text 7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lessonImage7" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

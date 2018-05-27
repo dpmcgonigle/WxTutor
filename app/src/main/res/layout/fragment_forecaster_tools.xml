@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    tools:context=".ForecasterToolsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/forecasterToolsTitle"
+            style="@style/fragmentTitle"
+            android:text="Forecaster Tools"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/forecasterToolsDescription"
+            style="@style/lessonContentText"
+            android:text="@string/forecasterToolsDescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsTitle" />
+
+        <TextView
+            android:id="@+id/forecasterToolsPageBreak1"
+            style="@style/pageBreakStyle"
+            android:text="@string/pageBreak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsDescription" />
+
+        <TextView
+            android:id="@+id/forecasterToolsTempTitle"
+            style="@style/lessonContentTitle"
+            android:text="Temperature"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsPageBreak1" />
+
+        <EditText
+            android:id="@+id/forecasterToolsTempInput"
+            style="@style/forecasterToolsInputOutput"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsTempTitle"/>
+
+        <Spinner
+            android:id="@+id/forecasterToolsTempSpinner"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginBottom="8dp"
+            android:background="#a9a9a9"
+            app:layout_constraintBottom_toTopOf="@+id/forecasterToolsPageBreak2"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsTempInput"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsTempTitle">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/forecasterToolsTempOutput1"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Temp"
+            app:layout_constraintBottom_toTopOf="@+id/forecasterToolsPageBreak2"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsTempSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsTempTitle" />
+
+        <TextView
+            android:id="@+id/forecasterToolsTempOutput2"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Temp"
+            app:layout_constraintBottom_toTopOf="@+id/forecasterToolsPageBreak2"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsTempOutput1"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsTempTitle" />
+
+        <TextView
+            android:id="@+id/forecasterToolsPageBreak2"
+            style="@style/pageBreakStyle"
+            android:text="@string/pageBreak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsTempInput" />
+
+        <TextView
+            android:id="@+id/forecasterToolsSpeedTitle"
+            style="@style/lessonContentTitle"
+            android:text="Speed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsPageBreak2" />
+
+    <EditText
+        android:id="@+id/forecasterToolsSpeedInput"
+        style="@style/forecasterToolsInputOutput"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forecasterToolsSpeedTitle"/>
+
+        <Spinner
+            android:id="@+id/forecasterToolsSpeedSpinner"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginBottom="8dp"
+            android:background="#a9a9a9"
+            app:layout_constraintBottom_toTopOf="@+id/forecasterToolsPageBreak3"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsTempInput"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsSpeedTitle">
+
+        </Spinner>
+
+    <TextView
+        android:id="@+id/forecasterToolsSpeedOutput1"
+        style="@style/forecasterToolsInputOutput"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Speed"
+        app:layout_constraintStart_toEndOf="@+id/forecasterToolsSpeedSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/forecasterToolsSpeedTitle" />
+
+    <TextView
+        android:id="@+id/forecasterToolsSpeedOutput2"
+        style="@style/forecasterToolsInputOutput"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Speed"
+        app:layout_constraintStart_toEndOf="@+id/forecasterToolsSpeedOutput1"
+        app:layout_constraintTop_toBottomOf="@+id/forecasterToolsSpeedTitle" />
+
+    <TextView
+        android:id="@+id/forecasterToolsSpeedOutput3"
+        style="@style/forecasterToolsInputOutput"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Speed"
+        app:layout_constraintStart_toEndOf="@+id/forecasterToolsSpeedSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/forecasterToolsSpeedOutput1" />
+
+    <TextView
+        android:id="@+id/forecasterToolsSpeedOutput4"
+        style="@style/forecasterToolsInputOutput"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="Speed"
+        app:layout_constraintStart_toEndOf="@+id/forecasterToolsSpeedOutput3"
+        app:layout_constraintTop_toBottomOf="@+id/forecasterToolsSpeedOutput1" />
+
+    <TextView
+        android:id="@+id/forecasterToolsPageBreak3"
+        style="@style/pageBreakStyle"
+        android:text="@string/pageBreak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forecasterToolsSpeedOutput4" />
+
+        <TextView
+            android:id="@+id/forecasterToolsPressureTitle"
+            style="@style/lessonContentTitle"
+            android:text="Pressure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsPageBreak3" />
+
+        <EditText
+            android:id="@+id/forecasterToolsPressureInput"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsPressureTitle" />
+
+        <Spinner
+            android:id="@+id/forecasterToolsPressureSpinner"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginBottom="8dp"
+            android:background="#a9a9a9"
+            app:layout_constraintBottom_toTopOf="@+id/forecasterToolsPageBreak4"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsPressureInput"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsPressureTitle">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/forecasterToolsPressureOutput1"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Pressure"
+            app:layout_constraintBottom_toTopOf="@+id/forecasterToolsPageBreak4"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsPressureSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsPressureTitle" />
+
+        <TextView
+            android:id="@+id/forecasterToolsPressureOutput2"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Pressure"
+            app:layout_constraintBottom_toTopOf="@+id/forecasterToolsPageBreak4"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsPressureOutput1"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsPressureTitle" />
+
+        <TextView
+            android:id="@+id/forecasterToolsPageBreak4"
+            style="@style/pageBreakStyle"
+            android:text="@string/pageBreak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsPressureInput" />
+
+        <TextView
+            android:id="@+id/forecasterToolsLengthTitle"
+            style="@style/lessonContentTitle"
+            android:text="Length"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsPageBreak4" />
+
+        <EditText
+            android:id="@+id/forecasterToolsLengthInput"
+            style="@style/forecasterToolsInputOutput"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsLengthTitle"/>
+
+        <Spinner
+            android:id="@+id/forecasterToolsLengthSpinner"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginBottom="8dp"
+            android:background="#a9a9a9"
+            app:layout_constraintBottom_toTopOf="@+id/forecasterToolsPageBreak5"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsLengthInput"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsLengthTitle">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/forecasterToolsLengthOutput1"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Speed"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsLengthSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsLengthTitle" />
+
+        <TextView
+            android:id="@+id/forecasterToolsLengthOutput2"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Speed"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsLengthOutput1"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsLengthTitle" />
+
+        <TextView
+            android:id="@+id/forecasterToolsLengthOutput3"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Speed"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsLengthSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsLengthOutput1" />
+
+        <TextView
+            android:id="@+id/forecasterToolsLengthOutput4"
+            style="@style/forecasterToolsInputOutput"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="Speed"
+            app:layout_constraintStart_toEndOf="@+id/forecasterToolsLengthOutput3"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsLengthOutput1" />
+
+        <TextView
+            android:id="@+id/forecasterToolsPageBreak5"
+            style="@style/pageBreakStyle"
+            android:text="@string/pageBreak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forecasterToolsLengthOutput4" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
